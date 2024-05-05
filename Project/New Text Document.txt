@@ -1,3 +1,0 @@
-api used : https://github.com/gadingnst/quran-api?tab=readme-ov-file
-video : https://youtu.be/eEzwCcON-PQ?si=U119DXaQNO1PuIId
-src code : https://github.com/abdoelazizgamal/quranPlayer
