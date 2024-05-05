@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700&display=swap');
+
+
+nav a:hover {
+  background-color: #003049;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+
+nav ul {
+  display: flex;
+  padding: 20px;
+  background-color: #023e7d;
+  align-items: center;
+justify-content: space-around;
+}
+
+nav ul li {
+  color: aliceblue;
+  padding: 10px;
+  list-style: none;
+  position: relative;
+}
+
+nav ul li a {
+  color: azure;
+  padding: 30px;
+  text-decoration: none;
+  font-family: 'cairo',sans-serif;
+
+}
+.title{
+font-size: 80px;
+}
+
+.card {
+  background-color: #a7e0ff;
+  width: 850px;
+  height: 200px;
+  border-radius: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card p {
+  color: rgb(6, 25, 31);
+  font-size: 16px;
+}
+
+
+/*
+.divs-container{
+  width: 100%;
+}
+
+
+.into {
+  background-color: #f2f2f2;
+  border:2px solid #333;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 5px;
+  width: 30%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.intro h2 {
+  margin-bottom: 5px;
+  font-size: 18px;
+}
+
+.intro p {
+  font-size: 14px;
+  color: #333;
+}
+*/
+
+
+
+body {
+  background-image: url("islam.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: 'cairo',sans-serif;
+  direction: rtl;
+}
