@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700&display=swap');
+
+body{
+    background-image: url("close-up-islamic-new-year-concept.jpg");
+    background-repeat:no-repeat ;
+    background-size:cover ;
+    font-family: 'cairo',sans-serif;
+}
+.login{
+    background-color: #7f4f24;
+  margin-top: 150px;
+  margin-left:  300px;
+  border:2px solid rgba(255, 255, 255, .5);
+  border-radius: 20px;
+  border-radius: 3; 
+  align-items: center;
+  width: 300px;
+  height: 350px;
+  justify-content: center;
+  display: flex;
+  backdrop-filter: blur(20px);
+}
+.icon{
+  color: white;  
+}
+.text1{
+    color:white ;
+    font-family: 'cairo',sans-serif;
+    text-align: center;
+    font-weight: bolder;
+}
+
+#inp2{
+    margin-left: 71px;
+    font-size: 15px;
+    border-radius: 5px;
+    border: 0;
+    padding-right:10px;
+    padding-left: 10px;
+    text-align: center;
+    background-color:white;
+    color: #7f4f24;
+}
