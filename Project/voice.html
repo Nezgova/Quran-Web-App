@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quran Player</title>
+    <link rel="shortcut icon" href="#">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" type="text/css" href="style/voice.css">
+</head>
+
+<body>
+    
+    <header class="header">
+        <a href="voice.html" class="logo">Quran App</a>
+        <i class='bx bx-menu' id="menu-icon"></i>
+        <nav class="navbar">
+            <a href="home.html">Home</a>
+            <a href="voice.html">Player</a>
+            <a href="login.html">LogOut</a>
+        </nav>
+    </header>
+    <div class="nav-bg"></div>
+    <br>
+    <br>
+    <div class="container">
+        <div class="player">
+            <div class="ayah">اضغط علي السورة للاستماع اليها</div>
+            <audio src="" class="quranPlayer" controls  autoplay></audio>
+            <div class="buttons">
+                <div class="icon next"><i class="fas fa-forward"></i></div>
+                <div class="icon play"><i class="fas fa-play"></i></div>
+                <div class="icon prev"><i class="fas fa-backward"></i></div>
+            </div>
+        </div>
+        <div class="surahs">
+
+        </div>
+    </div>
+    <div class="scrollbar" id="style-8">
+        <div class="force-overflow"></div>
+      </div>
+      <div class="scroll-top">
+        <!--     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7l4-4m0 0l4 4m-4-4v18" />
+          </svg> -->
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 11l7-7 7 7M5 19l7-7 7 7" />
+        </svg>
+      </div>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src="script/voice.js"></script>
+  
+</body>
+
+</html>
