@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cairo&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -59,11 +61,6 @@
   font-size: 36px;
   color: #fff;
   display: none;
-} 
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
 }
 html {
   scroll-behavior: smooth;
@@ -111,16 +108,16 @@ section {
   transform: scale(1);
 }
 
-.container
-{
-    max-width: 1250px;
-    width: 100%;
-    padding: 0 15px;
-    margin:  0 auto;
+.container {
+  max-width: 1250px;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
 }
+
 /** player **/
-.player
-{  background: rgba(255, 255, 255, 0.1);
+.player {
+  background: rgba(255, 255, 255, 0.1);
   border: 2px solid rgba(255, 255, 255, 0.2);
   border-radius: 10px;
   position: sticky;
@@ -131,111 +128,121 @@ section {
   margin: 20px auto;
   margin-top: 100px;
 }
-.player .ayah
-{
-    padding:  10px 0;
-    font-size: 30px;
-    color: #fff;
-    text-align: center;
-    font-family: 'cairo',sans-serif;
+.player .ayah {
+  padding: 10px 0;
+  font-size: 30px;
+  color: #fff;
+  text-align: center;
+  font-family: 'Cairo', sans-serif;
 }
-.player audio
-{
-    width: 100%;
-    height: 40px;
-    margin: 15px 0;
+.player audio {
+  width: 100%;
+  height: 40px;
+  margin: 15px 0;
 }
-.player .buttons
-{
-    display: flex;
-    justify-content: space-around;
+.player .buttons {
+  display: flex;
+  justify-content: space-around;
 }
-.buttons .icon
-{
-    width: 60px;
-    height: 60px;
-    background-color: #fff;
-    border-radius: 50%;
-    display: grid;
-    place-items: center;
-    color: #023e7d;
-    font-size: 20px;
-    cursor: pointer;
-}
-.surahs > div 
-{
-    color:#023e7d;
-    background-color:#a5d1fd;
-    box-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
-    font-weight: bold;
-    width: calc(100% - 90px);
-    transition: .3s color ease;
-    cursor: pointer;
-    margin-bottom: 10px;
-    padding: 10px 20px;
-    position: relative;
-    font-size: 20px;
-    counter-increment: surah-counter;
-}
-.surahs > div::after
-{
-    content: counter(surah-counter);
-    position: absolute;
-    height: 80px;
-    width: 80px;
-    left: -90px;
-    top: 50%;
-    transform: translateY(-50%);
-    border-radius: 50%;
-    font-size: 25px;
-    line-height: 80px;
-    text-align: center;
-    background-color: inherit;
-    transition: inherit;
-    box-shadow: inherit;
-}
-.surahs > div::before
-{
-    content: "";
-    position: absolute;
-    border : 7px solid  transparent;
-    border-right-color: #023e7d;
-    top: 50%;
-    transform : translateY(-50%);
-    left :-14px ;
-}
-.surahs > div:hover,
-.surahs > div:hover::after
-{
-    background: linear-gradient(to bottom ,#023e7d , #92cffb);
-    color: #fff;
-}
-#style-8::-webkit-scrollbar-track
-{
-	border: 1px solid rgb(93, 117, 255);
-	background-color: #9be3ff;
+.buttons .icon {
+  width: 60px;
+  height: 60px;
+  background-color: #fff;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  color: #023e7d;
+  font-size: 20px;
+  cursor: pointer;
 }
 
-#style-8::-webkit-scrollbar
-{
-	width: 10px;
-	background-color: #93ceff;
+.surahs {
+  counter-reset: surah-counter; /* Initialize the counter for surahs */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center the surahs */
 }
 
-*{
-  
-  scrollbar-color: #294a66 #7cbcf0 ;
+.surahs > div {
+  width: 500px; /* Set the width to 500px */
+  color: #7fe7ff;
+  background: rgba(255, 255, 255, 0.1); /* Similar to player background */
+  border: 2px solid rgba(255, 255, 255, 0.2); /* Similar to player border */
+  border-radius: 10px; /* Rounded corners like the player */
+  padding: 10px 20px; /* Padding for better spacing */
+  margin-bottom: 10px; /* Margin for spacing between items */
+  font-family: 'Cairo', sans-serif; /* Applying Cairo font */
+  font-size: 20px; /* Font size adjustment */
+  display: flex; /* To align items within div */
+  align-items: center; /* Centering items vertically */
+  justify-content: space-between; /* Space between elements */
+  cursor: pointer; /* Cursor pointer to indicate clickable */
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effects */
+  position: relative; /* Needed for number positioning */
+  counter-increment: surah-counter; /* Increment the counter for each surah */
 }
-#style-8::-webkit-scrollbar-thumb
-{
-	background-color: #000000;	
+
+.surahs > div::before {
+  content: counter(surah-counter); /* Display the counter's value */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  margin: 0 15px; /* Space between Arabic and English text */
+  font-size: 20px;
+  color: #7fe7ff;
 }
-  
-  body {
-    background-image: url("../backgrounds/1920x1080-554065-sheikh-zayed.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    font-family: 'cairo',sans-serif;
-    direction: rtl;
-  }
+
+.surahs > div:hover {
+  background-color: #40a8bf; /* Background color on hover */
+  color: #fff; /* Text color on hover */
+}
+
+.surahs > div:hover::before {
+  background-color: #fff; /* Background color on hover */
+  color: #023e7d; /* Text color on hover */
+}
+
+.surahs > div p {
+  font-family: 'Cairo', sans-serif;
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+.surahs > div p:first-child {
+  margin-right: 0px; /* Push the Arabic text to the right */
+}
+
+.surahs > div p:last-child {
+  margin-left:0px; /* Push the English text to the left */
+}
+
+#style-8::-webkit-scrollbar-track {
+  border: 1px solid rgb(93, 117, 255);
+  background-color: #9be3ff;
+}
+
+#style-8::-webkit-scrollbar {
+  width: 10px;
+  background-color: #93ceff;
+}
+
+* {
+  scrollbar-color: #294a66 #7cbcf0;
+}
+#style-8::-webkit-scrollbar-thumb {
+  background-color: #000000;
+}
+
+body {
+  background-image: url("../backgrounds/1920x1080-554065-sheikh-zayed.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: 'Cairo', sans-serif;
+  direction: rtl;
+}
