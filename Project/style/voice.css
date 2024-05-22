@@ -120,15 +120,16 @@ section {
 }
 /** player **/
 .player
-{
-    background: linear-gradient(to right ,#023e7d , #a5d1fd);
-    position: sticky;
-    top: 90px;
-    padding: 20px;
-    margin: 10px 0;
-    border-radius: 10px;
-    z-index: 1;
-    margin-top: 100px;
+{  background: rgba(255, 255, 255, 0.1);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  position: sticky;
+  z-index: 1;
+  padding: 30px;
+  text-align: center;
+  backdrop-filter: blur(10px);
+  margin: 20px auto;
+  margin-top: 100px;
 }
 .player .ayah
 {
