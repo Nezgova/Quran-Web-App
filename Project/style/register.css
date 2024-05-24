@@ -1,4 +1,3 @@
-
 /* POPPINS FONT */
 @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700&display=swap');
 /*=============== GOOGLE FONTS ===============*/
@@ -175,7 +174,7 @@ img {
 /* Input focus sticky top label */
 .login__input:not(:placeholder-shown).login__input:not(:focus) + .login__label {
   top: -12px;
-  font-size: var(--small-font-size);
+  font-size: var (--small-font-size);
 }
 
 /*=============== BREAKPOINTS ===============*/
@@ -192,4 +191,9 @@ img {
   .login__title {
     font-size: 2rem;
   }
+}
+
+/* Hide username and confirm password inputs in login mode */
+.login__box.hidden {
+  display: none;
 }
