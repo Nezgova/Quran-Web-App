@@ -41,15 +41,17 @@
   left: 100%;
 }
 .logo {
-  color: #fff;
-  font-size: 25px;
+  color: #87e9ff;
+  font-size: 30px;
+  font-weight: bold;
   text-decoration: none;
   font-weight: 600;
   cursor: default;
 }
 .navbar a {
   color: #fff;
-  font-size: 18px;
+  font-size: 20px;
+  font-weight: bold;
   text-decoration: none;
   margin-left: 35px;
   transition: 0.3s;
