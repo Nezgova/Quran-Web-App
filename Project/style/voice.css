@@ -166,8 +166,8 @@ section {
 .surahs > div {
   width: 500px; /* Set the width to 500px */
   color: #7fe7ff;
-  background: rgba(255, 255, 255, 0.1); /* Similar to player background */
-  border: 2px solid rgba(255, 255, 255, 0.2); /* Similar to player border */
+  background: rgba(255, 255, 255, 0.1); 
+  border: 2px solid rgba(255, 255, 255, 0.2); 
   border-radius: 10px; /* Rounded corners like the player */
   padding: 10px 20px; /* Padding for better spacing */
   margin-bottom: 10px; /* Margin for spacing between items */
