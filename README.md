@@ -1,2 +1,2 @@
 # Quran-Web-App
-Only using HTML/CSS/JS
+you can visit it from here : https://nezgova.github.io/Quran-Web-App/Project/home.html
